@@ -450,6 +450,9 @@ class Model extends Module
 
   # Private
 
+  root: ->
+    @constructor.irecords[@id]
+
   update: (options) ->
     @trigger('beforeUpdate', this, options)
 
